@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+db.json
+debug.log
+npm-debug.log
+public
+.deploy/
+.deploy_git/

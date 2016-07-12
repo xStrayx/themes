@@ -1,0 +1,71 @@
+article.styl
+.article {
+  margin: 30px;
+  margin-bottom: 5px;
+  position: relative;
+  background: article-color;
+  -webkit-transition: all 0.2s ease-in;
+    color: #bbb;
+    &:hover{
+    color: #eee;
+  }
+.article-title {
+  color: #ccc;
+  margin-left: 0px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  &:hover{
+    color: #fff;
+  }
+}
+
+// Background Color
+left-col-color = rgba(50,50,50,.85)
+mid-col-color = rgba(50,50,50,.8)
+article-color = rgba(50,50,50,.45)
+archives-color = rgba(50,50,50,.4)
+
+main.sty
+.scroll {
+    z-index: 999;
+    position: fixed;
+    bottom: 40px;
+    text-align: center;
+    line-height: 42px;
+    a {
+        display: block;
+        width: 29px;
+        height: 42px;
+        font-size: 28px;
+        &:last-child {
+            border-bottom: none;
+        };
+        .fa {
+            color: rgba(255, 255, 255, .8);
+        }
+        &:hover {
+            background: rgba(147, 181, 224, .3) !important;
+            .fa {
+                color: white;
+            }
+        }
+    }
+}
+
+
+footer.styl
+#footer
+    font-size: .75em;
+    font-family: font-chs, sans-serif;
+    color: #fff;
+
+color-scheme.styl 
+
+main.js  // 随机颜色
+
+heading.styl

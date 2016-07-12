@@ -1,0 +1,19 @@
+<% if (theme.background.on){ %>
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = <%= theme.background.background_sum %>;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background": "linear-gradient(8deg, hsla(220,100%,30%,1), hsla(220,40%,10%,1) 50%)"});
+            $(".left-col").css({"background": "linear-gradient(8deg, hsla(220,100%,30%,1), hsla(220,40%,10%,1) 50%)"});
+        })
+    </script>
+<% } else { %>
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = <%= theme.background.background_image %>;
+            var backgroundimg = "url(/background/bg-" + backgroundnum +".jpg)";
+            $("#mobile-nav").css({"background": "linear-gradient(8deg, hsla(220,100%,30%,1), hsla(220,40%,10%,1) 50%)"});
+            $(".left-col").css({"background": "linear-gradient(8deg, hsla(220,100%,30%,1), hsla(220,40%,10%,1) 50%)"});
+        })
+    </script>
+<% } %>
